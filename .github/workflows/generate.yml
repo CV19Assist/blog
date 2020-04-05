@@ -6,8 +6,6 @@ name: Generate Blog Content JSON
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   generate:

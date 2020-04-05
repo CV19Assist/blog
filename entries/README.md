@@ -8,7 +8,7 @@ Each entry should start with the ISO 8601 timestamp followed by two hyphens (`--
 | Without a title | `2020-04-05T02:19:00.000Z.md` |
 | With a friendly title | `2020-04-05T02:19:00.000Z--progress-update.md` |
 
-The timestamp example can be seen at [UTC Time ](https://www.utctime.net).
+The timestamp example can be seen at [UTC Time](https://www.utctime.net).
 
 ## Template
 
