@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Blog generator",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "generate": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CV19Assist/blog.git"
+  },
+  "author": "Farhan Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CV19Assist/blog/issues"
+  },
+  "homepage": "https://github.com/CV19Assist/blog#readme",
+  "dependencies": {
+    "showdown": "^1.9.1"
+  }
+}
