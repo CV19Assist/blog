@@ -4,7 +4,7 @@ const showdown = require("showdown");
 const converter = new showdown.Converter({ metadata: true });
 
 const dirPath = path.join(__dirname, "entries");
-const outputPath = path.join(__dirname, "docs");
+const outputPath = path.join(__dirname, "gh-pages");
 
 let entryIndex = [];
 let entries = {};
