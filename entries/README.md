@@ -29,6 +29,6 @@ The `publish` metadata can be used to prevent an entry from being published.
 
 ## Publishing an Entry
 
-Entries will be automatically published when the changes are committed to the repository.
+Entries will be automatically published when the changes are committed to the repository. Any entries with `publish: false` metadata or with other errors, like duplicate slug or invalid timestamps, are ignored.
 
 Note that you should not have to edit the `gh-pages` branch directly.
