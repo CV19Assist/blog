@@ -19,6 +19,11 @@ fs.readdir(dirPath, (err, filenames) => {
   filenames.forEach((filename) => {
     let data = fs.readFileSync(path.join(dirPath, filename), "utf8");
 
+    // Ignore README.md.
+    if (filename === "README.md") {
+      return;
+    }
+
     if (!filename.match(/^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z)(--.*)?.md$/)) {
       console.log(`Unexpected filename '${filename}'`);
       return;
@@ -44,6 +49,11 @@ fs.readdir(dirPath, (err, filenames) => {
     // Validate that the slug is unique
     if (entries[indexEntry.slug]) {
       console.log(`Already found slug "${indexEntry.slug}", slug must be unique in "${filename}". Ignoring this file.`);
+      return;
+    }
+
+    if (indexEntry.publish === "false") {
+      console.log(`Ignoring "${filename}" because 'publish' was set to false.`);
       return;
     }
 
