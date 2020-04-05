@@ -27,3 +27,4 @@ jobs:
       run: npm ci
     - run: npm run generate
     - run: git status
+    - run: git remote -v
