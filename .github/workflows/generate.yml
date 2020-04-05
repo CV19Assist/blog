@@ -34,7 +34,7 @@ jobs:
         cd gh-pages
         rm *.json
         git config user.name "Github Action"
-        git checkout gh-pages
+        git checkout -b gh-pages origin/gh-pages
         cd -
     - name: Generate the content
       run: npm run generate
